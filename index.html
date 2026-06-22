@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-container">
+    <div class="card">
+      <h1 class="title">To-Do List App</h1>
+
+      <div class="input-row">
+        <input id="task-input" type="text" placeholder="Enter a task..." aria-label="Enter a task" />
+        <button id="add-task-btn" class="btn primary">Add Task</button>
+      </div>
+
+      <div class="meta-row">
+        <p id="empty-msg" class="empty-msg">No tasks available</p>
+        <div id="stats" class="stats">
+          <span id="total-count">Total: 0</span>
+          <span id="completed-count">Completed: 0</span>
+        </div>
+      </div>
+
+      <ul id="task-list" class="task-list" aria-live="polite"></ul>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
